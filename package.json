@@ -1,0 +1,12 @@
+{
+  "name": "tty.js-resin",
+  "version": "0.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "tty.js": "^0.2.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  }
+}
