@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "app.js",
   "dependencies": {
-    "tty.js": "^0.2.13"
+    "tty.js": "^0.2.13",
+    "raspicam": "~0.2.13"
   },
   "devDependencies": {},
   "scripts": {
