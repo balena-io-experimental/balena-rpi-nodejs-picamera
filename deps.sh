@@ -3,5 +3,6 @@
 set -o errexit
 set -o pipefail
 
+#pull in firmware updates to run raspistill and raspivid
 apt-get -q update
-apt-get -y install nano libraspberrypi-bin
+apt-get -y install libraspberrypi-bin

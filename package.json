@@ -1,9 +1,8 @@
 {
-  "name": "tty.js-resin",
-  "version": "0.0.0",
+  "name": "resin-picamera",
+  "version": "0.0.1",
   "main": "app.js",
   "dependencies": {
-    "tty.js": "^0.2.13",
     "raspicam": "~0.2.13"
   },
   "devDependencies": {},
