@@ -4,7 +4,7 @@ var camera = new RaspiCam({
 	mode: "photo",
 	output: "../data/image.jpg",
 	encoding: "jpg",
-	timeout: 0 // take the picture immediately
+	timeout: 100 
 });
 
 camera.on("started", function( err, timestamp ){
@@ -20,13 +20,3 @@ camera.on("exit", function( timestamp ){
 });
 
 camera.start();
-
-// var users = {};
-// if(process.env.TTYUSER && process.env.TTYPASSWORD) {
-// 	users[process.env.TTYUSER] = process.env.TTYPASSWORD;
-// }
-// require('tty.js').createServer({
-// 	shell: 'bash',
-// 	users: users,
-// 	port: process.env.TTYPORT || process.env.PORT
-// }).listen();
