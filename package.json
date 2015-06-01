@@ -8,6 +8,6 @@
   "devDependencies": {},
   "scripts": {
     "preinstall": "bash deps.sh",
-    "start": "node app.js"
+    "start": "modprobe bcm2835-v4l2 && node app.js"
   }
 }
