@@ -1,5 +1,5 @@
 {
-  "name": "resin-picamera",
+  "name": "balena-picamera",
   "version": "0.0.1",
   "main": "app.js",
   "dependencies": {
