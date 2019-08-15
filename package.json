@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "app.js",
   "dependencies": {
-    "raspicam": "~0.2.14"
+    "raspicam": "~0.2.14",
+    "serve": "^11.1.0"
   },
   "devDependencies": {},
   "scripts": {
