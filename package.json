@@ -1,6 +1,6 @@
 {
   "name": "balena-picamera",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "app.js",
   "dependencies": {
     "raspicam": "~0.2.14",
