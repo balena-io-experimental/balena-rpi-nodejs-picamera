@@ -1,0 +1,19 @@
+# For 64-bit device types fall back to the 32-bit application image
+# because raspbian doesn't have a 64-bit version
+FROM balenalib/raspberrypi3-node:12-buster-run
+
+# We need to downgrade the relevant binaries for balenaOS
+# versions up to 2.38.0, because of firmware changes
+RUN    apt-get update \
+    && apt-get install libraspberrypi-bin=1.20180328-1~nokernel1 libraspberrypi0=1.20180328-1~nokernel1 --allow-downgrades -y \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+
+COPY package.json package.json
+
+RUN npm install --production
+
+COPY . .
+
+CMD ["npm", "start"]
